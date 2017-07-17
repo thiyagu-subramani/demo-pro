@@ -1,13 +1,12 @@
 {
   "name": "demo-pro",
-  "version": "1.2.2",
+  "version": "1.0.2",
   "description": "demo",
   "main": "index.js",
   "scripts": {
-   
-	  "complier": "dir /b *.ts>tsfiles.txt",
-	  "tsc": "tsc @tsfiles.txt",
-	  "prepublish":"npm run complier && npm run tsc"
+    "complier": "dir /b *.ts>tsfiles.txt",
+    "tsc": "tsc @tsfiles.txt",
+    "prepublish": "npm run complier && npm run tsc"
   },
   "repository": {
     "type": "git",
