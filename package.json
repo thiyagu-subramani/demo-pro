@@ -1,10 +1,13 @@
 {
   "name": "demo-pro",
-  "version": "1.0.1",
+  "version": "1.2.1",
   "description": "demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+	  "complier": "dir /b *.ts>tsfiles.txt",
+	  "tsc": "tsc @tsfiles.txt",
+	  "prepublish":"npm run complier && npm run tsc"
   },
   "repository": {
     "type": "git",
